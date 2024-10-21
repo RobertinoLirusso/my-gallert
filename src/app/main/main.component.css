@@ -74,3 +74,26 @@ figure:hover img {
 .footer h5, p {
     font-size: 16px;
 }
+
+@media (max-width: 768px) {
+    .w3-card {
+      border-radius: 5px; /* Ajusta el borde redondeado en pantallas pequeñas */
+      margin-bottom: 12px; /* Asegura suficiente espaciado entre los contenedores */
+    }
+  
+    .w3-display-container {
+      margin: 0 auto; /* Centra los contenedores de imágenes en la pantalla */
+    }
+  }
+  
+  /* Ajustes adicionales para pantallas muy pequeñas (teléfonos) */
+  @media (max-width: 480px) {
+    .w3-card {
+      border-radius: 3px; /* Redondeado más pequeño en pantallas pequeñas */
+      margin-bottom: 8px; /* Reduce el margen entre los contenedores */
+    }
+  
+    .w3-display-container {
+      padding: 0 5px; /* Ajusta el padding interno en dispositivos muy pequeños */
+    }
+  }

@@ -27,21 +27,6 @@
     document.getElementById("modal01").style.display = "none";
   }
 
-  let currentImageIndex = 0;
-
-
-
-function nextImage() {
-  currentImageIndex = (currentImageIndex + 1) % document.querySelectorAll('.w3-image').length;
-  document.getElementById("img01").src = document.querySelectorAll('.w3-image')[currentImageIndex].src;
-}
-
-function previousImage() {
-  currentImageIndex = (currentImageIndex - 1 + document.querySelectorAll('.w3-image').length) % document.queryAll('.w3-image').length;
-  document.getElementById("img01").src = document.querySelectorAll('.w3-image')[currentImageIndex].src;
-}
-
-  
   </script>
 </body>
 </html>

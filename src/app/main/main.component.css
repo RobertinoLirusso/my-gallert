@@ -1,0 +1,76 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h5 {
+    font-family: "Baumans", system-ui !important;
+    font-weight: 400 !important;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+
+.gallery {
+    padding: 24px;
+    flex: 1;
+}
+
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 16px;
+}
+
+figure {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: black;
+    overflow: hidden;
+}
+
+figure img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, object-fit 0.5s ease, opacity 0.5s ease;
+}
+
+figure:hover img {
+    object-fit: cover;
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.w3-hover-text {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    margin-bottom: 10px;
+}
+
+.w3-display-container:hover .w3-hover-text {
+    opacity: 1;
+    font-size: 20px;
+}
+
+.w3-modal-content {
+    margin-bottom: 16px;
+    transition: 0.6s ease;
+}
+
+.w3-modal img {
+    width: 100%;
+    filter: brightness(1.2);
+    cursor: zoom-in;
+}
+
+.footer h5, p {
+    font-size: 16px;
+}

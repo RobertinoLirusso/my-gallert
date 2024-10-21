@@ -1,0 +1,33 @@
+<div class="container" role="main" aria-label="Gallery">
+
+
+  <div class="w3-container w3-black">
+    <h1 class="w3-wide">My Gallery</h1>
+  </div>
+
+  <div class="gallery responsive-grid">
+    <div *ngFor="let image of images" class="main">
+      <div class="w3-display-container">
+        <div class="w3-card w3-hover-shadow">
+          <figure>
+            <img src="{{image.image_url}}" alt="{{image.title}}" class="w3-image" onclick="onClick(this)">
+          </figure>
+        </div>
+        <div class="w3-display-bottomleft w3-container w3-text-white w3-hover-text">{{image.title}}</div>      
+      </div>
+    </div>
+    </div>
+
+  <div id="modal01" class="w3-modal" onclick="event.stopPropagation()">
+    <span class="w3-button w3-black w3-hover-aqua w3-xlarge w3-display-topright" onclick="closeModal()">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img id="img01">
+    </div>
+  </div>
+
+  <div class="w3-container w3-black footer">
+    <h5 class="w3-center w3-wide">My Gallery</h5>
+    <p class="w3-center w3-wide">&copy; All rights reserved. Robertino Lirusso</p>
+  </div>
+  
+</div>

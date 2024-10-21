@@ -25,6 +25,10 @@ h1 {
     gap: 16px;
 }
 
+.w3-card {
+    overflow: hidden;
+}
+
 figure {
     margin: 0;
     display: flex;
@@ -75,25 +79,36 @@ figure:hover img {
     font-size: 16px;
 }
 
+
 @media (max-width: 768px) {
     .w3-card {
-      border-radius: 5px; /* Ajusta el borde redondeado en pantallas pequeñas */
-      margin-bottom: 12px; /* Asegura suficiente espaciado entre los contenedores */
+        border-radius: 6px;
     }
-  
-    .w3-display-container {
-      margin: 0 auto; /* Centra los contenedores de imágenes en la pantalla */
+    
+    figure img {
+        height: 200px; /* Reducir más el tamaño de las imágenes */
     }
-  }
-  
-  /* Ajustes adicionales para pantallas muy pequeñas (teléfonos) */
-  @media (max-width: 480px) {
-    .w3-card {
-      border-radius: 3px; /* Redondeado más pequeño en pantallas pequeñas */
-      margin-bottom: 8px; /* Reduce el margen entre los contenedores */
+
+    h1 {
+        font-size: 20px; /* Ajusta el tamaño del título */
     }
-  
-    .w3-display-container {
-      padding: 0 5px; /* Ajusta el padding interno en dispositivos muy pequeños */
+
+    h5, p {
+        font-size: 14px; /* Ajusta el texto del footer */
     }
-  }
+}
+
+/* Ajustes para pantallas muy pequeñas (Teléfonos) */
+@media (max-width: 480px) {
+    .responsive-grid {
+        grid-template-columns: 1fr; /* Mostrar solo una columna en dispositivos muy pequeños */
+    }
+
+    figure img {
+        height: 180px; /* Ajusta el tamaño de las imágenes para teléfonos */
+    }
+
+    h1 {
+        font-size: 18px; /* Tamaño de fuente más pequeño para teléfonos */
+    }
+}

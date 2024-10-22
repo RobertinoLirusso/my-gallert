@@ -10,13 +10,14 @@
       <div class="w3-display-container">
         <div class="w3-card w3-hover-shadow">
           <figure>
-            <img src="{{image.image_url}}" alt="{{image.title}}" class="w3-image" onclick="onClick(this)">
+            <img loading="lazy" src="{{image.image_url}}" alt="{{image.title}}" class="w3-image" onclick="onClick(this)">
           </figure>
         </div>
         <div class="w3-display-bottomleft w3-container w3-text-white w3-hover-text">{{image.title}}</div>      
       </div>
     </div>
     </div>
+    
 
   <div id="modal01" class="w3-modal" onclick="event.stopPropagation()">
     <span class="w3-button w3-black w3-hover-aqua w3-xlarge w3-display-topright" onclick="closeModal()">&times;</span>
